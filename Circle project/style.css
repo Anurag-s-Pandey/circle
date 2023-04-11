@@ -1,0 +1,25 @@
+/*Import font*/ 
+@import url('https://fonts.googleapis.com/css2?family=Poppin&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppin', sans-serif;
+    background-color: #090909;
+    height: 100vh;
+    
+    display: grid;
+    place-items: center;
+}
+.circle{
+    animation: rotateHue 3s alternate infinite;
+}
+@keyframes rotateHue {
+    to{
+        filter: hue-rotate(5turn);
+    }
+}
+
